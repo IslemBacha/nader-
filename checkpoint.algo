@@ -1,0 +1,21 @@
+ALGORITHM checkpoint
+VAR
+    c : CHAR;
+    cc,cw,cv : integer := 0
+BEGIN
+    REPEAT
+    write("donner un char");
+    read(c);
+    cc := cc + 1;
+    IF (c =' ') THEN
+        cw := cw + 1;
+    END_IF
+    IF (c ='a' OR c ='e'OR c = 'i' OR c = 'o' OR c ='u'OR c = 'y' c ='A' OR c ='E'OR c = 'I' OR c = 'O' OR c ='U'OR c = 'Y'  ) THEN
+
+        cv : = cv + 1 ;
+    END_IF
+    UNTIL (c ='.');
+    write("Nbr char";cc);
+    write("Nbr word";cW +1);
+    write("Nbr V";cv);
+END
